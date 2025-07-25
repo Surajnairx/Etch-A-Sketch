@@ -6,5 +6,47 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Etch-A-Sketch</h1>
+      <form action="" id="grid-size">
+        <label for="grid-size">
+          Grid Size <input type="number" min="2" placeholder="2" />
+        </label>
+        <button id="user-submit">Submit</button>
+      </form>
+    </header>
+    <main>
+      <form action="" id="settings">
+        |
+        <label for="black">
+          <input type="radio" id="black" value="black" />
+          Black
+        </label>
+        |
+        <label for="red">
+          <input type="radio" id="red" value="red" />
+          Red
+        </label>
+        |
+        <label for="rainbow">
+          <input type="radio" id="rainbow" value="rainbow" />
+          Rainbow
+        </label>
+        |
+        <label for="erazer">
+          <input type="radio" id="erazer" value="erazer" />
+          Erazer
+        </label>
+        |
+        <button id="clear-button">Clear</button>
+      </form>
+    </main>
+    <section id="grid-container">
+      <div class="container"></div>
+    </section>
+    <footer>
+      <p>Copyright © The Rinzler Project 2025</p>
+    </footer>
+  </body>
 </html>
