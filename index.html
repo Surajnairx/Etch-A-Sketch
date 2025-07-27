@@ -9,36 +9,35 @@
   <body>
     <header>
       <h1>Etch-A-Sketch</h1>
-      <form action="" id="grid-size">
+      <section>
         <label for="grid-size">
-          Grid Size <input type="number" min="2" placeholder="2" />
+          Grid Size
+          <input
+            id="grid-size"
+            type="number"
+            min="2"
+            max="100"
+            placeholder="10"
+          />
         </label>
         <button id="user-submit">Submit</button>
-      </form>
+      </section>
     </header>
     <main>
       <form action="" id="settings">
         |
-        <label for="black">
-          <input type="radio" id="black" value="black" />
-          Black
-        </label>
-        |
-        <label for="red">
-          <input type="radio" id="red" value="red" />
-          Red
-        </label>
-        |
-        <label for="rainbow">
-          <input type="radio" id="rainbow" value="rainbow" />
-          Rainbow
-        </label>
-        |
-        <label for="erazer">
-          <input type="radio" id="erazer" value="erazer" />
-          Erazer
-        </label>
-        |
+
+        <input type="radio" name="color" value="black" for="color" checked />
+        Black
+
+        <input type="radio" name="color" for="color" value="red" />
+        Red |
+
+        <input type="radio" name="color" for="color" value="rainbow" />
+        Rainbow |
+
+        <input type="radio" name="color" value="erazer" />
+        Erazer |
         <button id="clear-button">Clear</button>
       </form>
     </main>
@@ -48,5 +47,6 @@
     <footer>
       <p>Copyright © The Rinzler Project 2025</p>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>

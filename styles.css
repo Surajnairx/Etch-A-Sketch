@@ -36,14 +36,23 @@ form {
   height: 500px;
   width: 500px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   border: 15px solid rgb(150, 142, 142);
   border-radius: 14px;
+}
+.row {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.col {
+  border: 0.5px solid rgb(237, 166, 166);
+  display: flex;
+  flex: 1;
 }
 footer {
   text-align: center;
   padding: 1rem;
-  position: absolute;
   bottom: 0;
   right: 30%;
   left: 30%;
